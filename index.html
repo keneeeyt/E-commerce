@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah® | Official Site</title>
+    <link rel="icon" href="./img/noahicon.jpg">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/c662752bc7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navBar -->
+    <nav class="relative container mx-auto  p-3">
+        <!-- Flex container -->
+        <div class="flex items-center justify-between">
+            <!-- My logo -->
+            <div>
+                <img src="./img/noahlogo.jpg" alt="logo" width="150">
+            </div>
+            <!-- select menu items -->
+            <div class="hidden md:flex space-x-6">
+                 <a href="#" class="hover:text-veryLightGray">Store</a>
+                 <a href="#" class="hover:text-veryLightGray">Products</a>
+                 <a href="#" class="hover:text-veryLightGray">About us</a>
+                 <a href="#" class="hover:text-veryLightGray">News</a>
+            </div>
+            <div class="space-x-6">
+                <a href="#" ><i class="fas fa-search hover:text-veryLightGray"></i></a>
+                <a href="#"><i class="fa-solid fa-user hover:text-veryLightGray"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping hover:text-veryLightGray"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero section -->
+    <section id="hero">
+        <div class="relative">
+            <div class="bg-gray-200">
+             <ul id="slider">
+                <li class="relative">
+                    <img src="./img/stoke.jpg" alt="" class="hidden md:flex">
+                    <img src="./img/smstoke.jpg" alt="" class="md:hidden">
+                     <div class="absolute top-0 left-0 text-center md:pl-9 md:text-left w-full text-5xl font-bold mt-5">
+                          <h1>New Arrivals</h1>
+                          <p class="font-normal text-2xl mt-5 md:mt-3 font-medium">It's time to wear something fresh.</p>
+                          <p class="font-normal text-2xl font-medium">Get on board with our lates thread.</p>
+                     </div>
+                </li>
+                <li class="relative hidden">
+                    <img src="./img/pic1.jpg" alt="" class="hidden md:flex">
+                    <img src="./img/smp1.jpg" alt="" class="md:hidden">
+                </li>
+             </ul>
+            </div>
+            <div class="absolute p-3 flex h-full w-full top-0 left-0">
+               <div class="my-auto w-full flex justify-between">
+                <button onclick="pref()" class="bg-white p-2 rounded-full bg-opacity-80 shadow-lg hover:text-veryLightGray prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button onclick="next()" class="bg-white p-2 rounded-full bg-opacity-80 shadow-lg hover:text-veryLightGray next"><i class="fa-solid fa-chevron-right"></i></button>
+               </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>
