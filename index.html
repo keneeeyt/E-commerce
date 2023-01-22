@@ -11,9 +11,9 @@
 </head>
 <body>
     <!-- navBar -->
-    <nav class="relative container mx-auto  p-3">
+    <nav class="relative z-10 mx-auto p-3 sticky top-0 bg-white">
         <!-- Flex container -->
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between mx-5">
             <!-- My logo -->
             <div>
                 <img src="./img/noahlogo.jpg" alt="logo" width="150">
@@ -30,20 +30,37 @@
                 <a href="#"><i class="fa-solid fa-user hover:text-veryLightGray"></i></a>
                 <a href="#"><i class="fa-solid fa-cart-shopping hover:text-veryLightGray"></i></a>
             </div>
+            <!-- Hamburger icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <!-- mobile menu -->
+          <div class="md:hidden">
+              <div id="menu" class="absolute flex-col hidden items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#">Store</a>
+                <a href="#">Products</a>
+                <a href="#">About Us</a>
+                <a href="#">News</a>
+              </div>
+          </div>
+
         </div>
     </nav>
     <!-- Hero section -->
     <section id="hero">
-        <div class="relative">
+        <div class="relative z-0">
             <div class="bg-gray-200">
              <ul id="slider">
                 <li class="relative">
                     <img src="./img/stoke.jpg" alt="" class="hidden md:flex">
                     <img src="./img/smstoke.jpg" alt="" class="md:hidden">
                      <div class="absolute top-0 left-0 text-center md:pl-9 md:text-left w-full text-5xl font-bold mt-5">
-                          <h1>New Arrivals</h1>
-                          <p class="font-normal text-2xl mt-5 md:mt-3 font-medium">It's time to wear something fresh.</p>
-                          <p class="font-normal text-2xl font-medium">Get on board with our lates thread.</p>
+                          <h1 class="md:text-7xl">New Arrivals</h1>
+                          <p class="font-normal text-lg md:text-5xl mt-5 md:mt-3 font-medium">It's time to wear something fresh.</p>
+                          <p class="font-normal text-lg md:text-5xl font-medium">Get on board with our lates thread.</p>
                      </div>
                 </li>
                 <li class="relative hidden">
@@ -59,8 +76,134 @@
                </div>
             </div>
         </div>
-        
+
+        <div class="mt-10 relative ">
+            <img src="./img/twopic.jpg" alt="" class="hidden md:inline">
+            <img src="./img/twopic1.jpg" alt="" class="md:hidden">
+            <div class="absolute top-10 left-0 text-center w-full text-4xl font-medium text-white">
+            <p class="font-semibold md:text-6xl">Get out there.</p>
+            <p class="font-semibold md:text-5xl">It's boardshorts season.</p>
+            </div>
+        </div>
+          <div class="container grid grid-cols-2 md:grid-cols-4 gap-2 mx-auto mt-20">
+            <div>
+                <a href="#">
+                <img src="./img/product1.PNG" alt="">
+                <a href="" class="-mx-4 hover:underline underline-offset-8"><h1 class="mx-5">Th City Island Adventure Shirt</h1></a>
+                <p class="-mt-6 mx-5">₱1,790.00</p>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                <img src="./img/product2.PNG" alt="">
+                <a href="" class="-mx-4 hover:underline underline-offset-8"><h1 class="mx-5">Island ways Shirt</h1></a>
+                <p class="-mt-6 mx-5">₱1,790.00</p>
+            </a>
+            </div>
+            <div>
+                <a href="#">
+                <img src="./img/product3.PNG" alt="">
+                <a href="" class="-mx-4 hover:underline underline-offset-8"><h1 class="mx-5">Island ways Shirt</h1></a>
+                <p class="-mt-6 mx-5">₱1,790.00</p>
+            </a>
+            </div>
+            <div>
+                <a href="#">
+                <img src="./img/product4.PNG" alt="">
+                <a href="" class="-mx-4 hover:underline underline-offset-8"><h1 class="mx-5 mt-10">Island ways Shirt</h1></a>
+                <p class="-mt-6 mx-5">₱1,790.00</p>
+            </a>
+            </div>
+            <div>
+                <a href="#">
+                <img src="./img/product5.PNG" alt="">
+                <a href="" class="-mx-4 hover:underline underline-offset-8"><h1 class="mx-5">Island ways Shirt</h1></a>
+                <p class="-mt-6 mx-5">₱1,790.00</p>
+            </a>
+            </div>
+            <div>
+                <a href="#">
+                <img src="./img/product2.PNG" alt="">
+                <a href="" class="-mx-4 hover:underline underline-offset-8"><h1 class="mx-5">Island ways Shirt</h1></a>
+                <p class="-mt-6 mx-5">₱1,790.00</p>
+            </a>
+            </div>
+            <div>
+                <a href="#">
+                <img src="./img/product2.PNG" alt="">
+                <a href="" class="-mx-4 hover:underline underline-offset-8"><h1 class="mx-5">Island ways Shirt</h1></a>
+                <p class="-mt-6 mx-5">₱1,790.00</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <img src="./img/classictee.jpg" alt="" class="hidden md:flex">
+            <img src="./img/classic.jpg" alt="" class="md:hidden">
+          </div>
+          <div class="top-0 left-0 text-center  md:justify-center md:text-center w-full mt-7 font-bold">
+                <h1>THIS IS THE CLASSIC TEE</h1>
+             <button class="mt-10 border-2 p-3">GET YOURS NOW</button>
+          </div>
+
+          <div class="bg-lightGray text-center mt-10">
+            <div class="flex justify-center items-center">
+                <img src="./img/noah.png" width="100" alt="" class="mt-10">
+            </div>
+            <div class="font-semibold mt-3 text-black">
+                <p>INSPIRED BY STOKED LIFESTYLE</p>
+                <p class="px-12 text-center md:px-36 mt-5 font-light text-justify pb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vel pariatur facere iusto praesentium. 
+                    Cum repellat rem magni error, minima ipsam, neque voluptatem non omnis, unde cupiditate iure! Et, ea
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, recusandae eum facilis sunt error debitis est nam assumenda hic quis 
+                    quod odit consequatu  praesentium dolor deleniti veniam in harum nisi..</p>
+            </div>
+          </div>
+          <div class="bg-footerColor text-white p-10 space-y-10 grid grid-cols-1 md:grid-cols-4 md:space-y-0">
+            <div class="space-y-6">
+                <h1 class="font-semibold">DISCOVER</h1>
+                <ul class="space-y-6 font-thin">
+                    <li><a href="#" class="hover:underline underline-offset-8">Find a Store</a></li>
+                    <li><a hre="#" class="hover:underline underline-offset-8">Gift card</a></li>
+                </ul>
+            </div>
+            <div class="space-y-6 pt-5 md:pt-0">
+                <h1 class="font-semibold">CUSTOMER SERVICE</h1>
+                <ul class="space-y-6 font-thin">
+                    <li><a href="#" class="hover:underline underline-offset-8">Contact Us</a></li>
+                    <li><a href="#" class="hover:underline underline-offset-8">FAQs</a></li>
+                    <li><a href="#" class="hover:underline underline-offset-8">Size Chart</a></li>
+                </ul>
+            </div>
+            <div class="space-y-6 pt-5 md:pt-0">
+                <h1 class="font-semibold">FOLLOW NOAH</h1>
+                <div class="space-y-6 font-thin space-x-3">
+                    <a href="#"><i class="fa-brands fa-square-facebook md:text-3xl"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram md:fa-5x md:text-3xl"></i></a>
+                </div>
+            </div>
+            <div class="space-y-6 pt-5 md:pt-0">
+                <h1 class="font-semibold">NEWSLETTER</h1>
+                <form action="">
+                    <div class="flex">
+                    <input type="email" name="email" id="email" placeholder="Email address" class="p-3 rounded text-black text-sm font-light md:p-2">
+                    <button type="submit" class="inline-block"><i class="fa-solid fa-right-to-bracket fa-2x bg-black p-2"></i><button>
+                    </div>
+                    <div class="mt-7">
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms" class="text-center font-thin">You are signing up to receive product updates and newsletters. By signing up, you are consenting to our <a href="#" class="underline underline-offset-5">privacy policy</a> but you can opt out at any time.</label>
+                    </div>
+                </form>
+                <div>
+                    <h1 class="font-semibold">PAYMENTS METHOD</h1>
+                    <div class="flex space-x-4 mt-5">
+                     <img src="./img/visa.png" width="40" height="auto" alt="" class="object-contain">
+                     <img src="./img/master.png" width="36" height="22" alt="">
+                     <img src="./img/gcash.png" width="70" alt="" class="object-contain">
+         
+                    </div>
+                   </div>
+            </div>
     </section>
-    <script src="./main.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

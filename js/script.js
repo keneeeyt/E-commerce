@@ -1,3 +1,14 @@
+// Javascript for hamburger navbar
+
+const btn = document.getElementById('menu-btn');
+const nav = document.getElementById('menu');
+
+btn.addEventListener('click', ()=>{
+     btn.classList.toggle('open')
+     nav.classList.toggle('flex')
+     nav.classList.toggle('hidden')
+});
+// Javascript for corousel with automatic click
 currentSlideID = 1;
 sliderElement = document.getElementById('slider');
 totalSlide = sliderElement.childElementCount;
@@ -39,3 +50,4 @@ setInterval(function(){
         pref();
     }
 }, 3000);
+
